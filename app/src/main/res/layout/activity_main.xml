@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="Shop details"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="28dp"
+            android:padding="10dp"
+            android:background="@drawable/default_option_border">
+
+        </TextView>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/demo1"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="Dmart"
+            android:textSize="22dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/default_option_border"
+            >
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/select"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:background="@drawable/default_option_border">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/auto_complete_txt"
+                android:inputType="none"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Address"
+            android:paddingLeft="15dp"
+            android:textSize="22dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_option_border">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="11:00 AM"
+            android:textSize="20dp"
+            android:background="@drawable/default_option_border"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="10:00 PM"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_option_border"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/select"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/auto_complete_txt1"
+                android:inputType="none"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Minimum bill amount (₹)"
+            android:gravity="center_vertical"
+            android:background="@drawable/default_option_border"
+            android:paddingLeft="15dp"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_width="81dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:text="100"
+            android:background="@drawable/default_option_border"
+            android:textSize="25dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Changes below minimum amount (₹)"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:background="@drawable/default_option_border"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_width="81dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/default_option_border"
+            android:text="500"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/gststrike"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:text="GST"
+            android:textSize="25dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/default_option_border"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="Yes"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_option_border"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="81dp"
+            android:layout_height="50dp"
+            android:text="No"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_option_border"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="#E12828"
+        android:backgroundTint="#EA0F0F"
+        android:text="Update" />
+
+</LinearLayout>
